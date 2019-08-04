@@ -14,11 +14,10 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
-    QString subject;
-    QString chapter;
     QSqlDatabase database;
     QString locate;
-    qint8 num = 0;
+    qint16 num = 0;
+    qint16 mark;
     class d{
     public: QString dbans;
         QString usans;
@@ -31,7 +30,7 @@ public:
             question = "";
         }
     };
-    d data[10];
+    d data[11];
     ~MainWindow();
 
 private slots:
@@ -54,6 +53,8 @@ private slots:
     void on_btnnxt_clicked();
 
     void on_btnchp2_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;
