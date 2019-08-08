@@ -56,6 +56,12 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_btnlogin_clicked();
+
+    void on_btnadmin_clicked();
+
+    void on_btnlogin_2_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

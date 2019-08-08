@@ -2,11 +2,11 @@
 #include "ui_mainwindow.h"
 #include <QtSql/QSqlQuery>
 #include <QtSql/QSqlDatabase>
+#include <QMessageBox>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-
     ui->setupUi(this);
     ui->mainwid->setCurrentIndex(0);
     ui->pushButton->hide();
@@ -15,21 +15,24 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
-
     delete ui;
 }
 
 void MainWindow::on_btnsub1_clicked()
 {
     ui->mainwid->setCurrentIndex(1);
-    ui->lblsubno_2->setNum(1);
+    ui->lblsubname_2->setText("1103");
     ui->pushButton->show();
+    ui->btnadmin->hide();
 }
 
 void MainWindow::on_pushButton_clicked()
 {
     ui->mainwid->setCurrentIndex(0);
     ui->pushButton->hide();
+    ui->btnadmin->show();
+    ui->txtpass->setText("");
+    ui->txtusername->setText("");
     ui->btnb->setStyleSheet("background-color:rgb(0, 170, 127);border:3px solid white;border-radius:35;");
     ui->btnc->setStyleSheet("background-color:rgb(0, 170, 127);border:3px solid white;border-radius:35;");
     ui->btnd->setStyleSheet("background-color:rgb(0, 170, 127);border:3px solid white;border-radius:35;");
@@ -40,7 +43,7 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_btnchp1_clicked()
 {
-    ui->lblsubno->setNum(1);
+    ui->lblsubname->setText("1103");
     num = 0;
     mark = 0;
     ui->lblchpno->setNum(1);
@@ -62,7 +65,6 @@ void MainWindow::on_btnchp1_clicked()
     database.close();
     ui->lblquestion->setText(data[num].question);
 }
-
 void MainWindow::on_btna_clicked()
 {
     data[num].usans = ui->btna->text();
@@ -147,7 +149,7 @@ void MainWindow::on_btnnxt_clicked()
 void MainWindow::on_btnchp2_clicked()
 {
     num = 0;
-    ui->lblsubno->setNum(1);
+    ui->lblsubname->setNum(1);
     ui->lblchpno->setNum(2);
     ui->lblcurrent->setNum(num+1);
     ui->btnnxt -> setHidden(true);
@@ -166,8 +168,71 @@ void MainWindow::on_btnchp2_clicked()
     database.close();
     ui->lblquestion->setText(data[num].question);
 }
-
 void MainWindow::on_pushButton_2_clicked()
 {
     ui->mainwid->setCurrentIndex(0);
+}
+
+void MainWindow::on_btnlogin_clicked()
+{
+    int logcount = 0;
+    QString username = ui->txtusername->text();
+    QString password = ui->txtpass->text();
+    while(username.endsWith(' ')){
+        username.chop(1);
+    }
+    while(password.endsWith(' ')){
+        password.chop(1);
+    }
+    database.setDatabaseName("D:/University of Information Technology/C++/Project/Database/Admins.db");
+    database.open();
+    QSqlQuery qry;
+    qry.exec("select * from Admin where Username='"+username+"' and Password='"+password+"'");
+    while(qry.next())
+    {
+        logcount++;
+    }
+    if(logcount ==1 )
+    {
+        ui->mainwid->setCurrentIndex(5);
+    }
+    if(logcount <1)
+    {
+        QMessageBox::warning(this,"Invalid!","Your username or password is not valid.");
+    }
+}
+
+void MainWindow::on_btnadmin_clicked()
+{
+    ui->mainwid->setCurrentIndex(4);
+    ui->btnadmin->hide();
+    ui->pushButton->show();
+}
+
+void MainWindow::on_btnlogin_2_clicked()
+{
+    int sub = 1;
+    int chp = 0;
+    QString forqry = "";
+    QString question = ui->txtquestion->toPlainText();
+    QString answer = ui->comboans->currentText();
+    QString reason = ui->txtreason->toPlainText();
+    database = QSqlDatabase::addDatabase("QSQLITE");
+    QSqlQuery query;
+    if(ui->combosub->currentText()!= "Programming in c++")
+    {
+        sub = 2;
+    }
+    chp = ui->spinchap->value();
+    switch (sub) {
+    case 1: database.setDatabaseName("D:/University of Information Technology/C++/Project/Database/Subject1.db");
+    }
+    database.open();
+    switch (chp) {
+    case 1: forqry = "insert into chapter1 (question,answer,reason) values ('"+question+"','"+answer+"','"+reason+"')";
+    }
+    if(query.exec(forqry))
+    {
+        QMessageBox::information(this,"Success","The new question has been added.");
+    }
 }
