@@ -18,6 +18,7 @@ public:
     QString locate;
     qint16 num = 0;
     qint16 mark;
+    QString sub;
     class d{
     public: QString dbans;
         QString usans;
@@ -61,6 +62,20 @@ private slots:
     void on_btnadmin_clicked();
 
     void on_btnlogin_2_clicked();
+
+    void on_btnchp3_clicked();
+
+    void on_btnchp4_clicked();
+
+    void on_btnchp5_clicked();
+
+    void on_btnchp6_clicked();
+
+    void on_btnchp7_clicked();
+
+    void on_btnchp8_clicked();
+
+    void on_btnchp9_clicked();
 
 private:
     Ui::MainWindow *ui;
