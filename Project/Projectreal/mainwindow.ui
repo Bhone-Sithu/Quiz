@@ -22,7 +22,7 @@ color: rgb(0, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>110</y>
+      <y>100</y>
       <width>1301</width>
       <height>591</height>
      </rect>
@@ -35,7 +35,7 @@ color: rgb(0, 0, 0);</string>
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>5</number>
     </property>
     <widget class="QWidget" name="Homie">
      <widget class="QLabel" name="lblhome">
@@ -82,12 +82,12 @@ color: rgb(255, 255, 255);</string>
        <string notr="true">color: rgb(0, 170, 127);background-color:white;border-radius:65;</string>
       </property>
       <property name="text">
-       <string>1103</string>
+       <string>Basic data processing</string>
       </property>
      </widget>
      <widget class="QPushButton" name="btnsub2">
       <property name="enabled">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="geometry">
        <rect>
@@ -111,7 +111,7 @@ color: rgb(255, 255, 255);</string>
        <string notr="true">color: rgb(0, 170, 127);background-color:white;border-radius:65;</string>
       </property>
       <property name="text">
-       <string>1101</string>
+       <string>Computer Fundamentals</string>
       </property>
      </widget>
     </widget>
@@ -119,9 +119,9 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="lblchap">
       <property name="geometry">
        <rect>
-        <x>640</x>
-        <y>0</y>
-        <width>461</width>
+        <x>540</x>
+        <y>100</y>
+        <width>251</width>
         <height>91</height>
        </rect>
       </property>
@@ -144,9 +144,9 @@ color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>120</y>
+        <y>150</y>
         <width>441</width>
-        <height>61</height>
+        <height>55</height>
        </rect>
       </property>
       <property name="font">
@@ -171,9 +171,9 @@ color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>210</y>
+        <y>240</y>
         <width>441</width>
-        <height>61</height>
+        <height>55</height>
        </rect>
       </property>
       <property name="font">
@@ -198,9 +198,9 @@ color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>300</y>
+        <y>330</y>
         <width>441</width>
-        <height>61</height>
+        <height>55</height>
        </rect>
       </property>
       <property name="font">
@@ -225,9 +225,9 @@ color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>390</y>
+        <y>420</y>
         <width>441</width>
-        <height>61</height>
+        <height>55</height>
        </rect>
       </property>
       <property name="font">
@@ -252,9 +252,9 @@ color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>800</x>
-        <y>210</y>
+        <y>240</y>
         <width>441</width>
-        <height>61</height>
+        <height>55</height>
        </rect>
       </property>
       <property name="font">
@@ -279,9 +279,9 @@ color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>480</y>
+        <y>510</y>
         <width>441</width>
-        <height>61</height>
+        <height>55</height>
        </rect>
       </property>
       <property name="font">
@@ -306,9 +306,9 @@ color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>800</x>
-        <y>120</y>
+        <y>150</y>
         <width>441</width>
-        <height>61</height>
+        <height>55</height>
        </rect>
       </property>
       <property name="font">
@@ -329,9 +329,9 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="lblsubname_2">
       <property name="geometry">
        <rect>
-        <x>140</x>
+        <x>20</x>
         <y>0</y>
-        <width>461</width>
+        <width>1231</width>
         <height>91</height>
        </rect>
       </property>
@@ -344,7 +344,7 @@ color: rgb(255, 255, 255);</string>
        <string/>
       </property>
       <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QPushButton" name="btnchp8">
@@ -354,9 +354,9 @@ color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>800</x>
-        <y>300</y>
+        <y>330</y>
         <width>441</width>
-        <height>61</height>
+        <height>55</height>
        </rect>
       </property>
       <property name="font">
@@ -381,9 +381,9 @@ color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>800</x>
-        <y>390</y>
+        <y>420</y>
         <width>441</width>
-        <height>61</height>
+        <height>55</height>
        </rect>
       </property>
       <property name="font">
@@ -401,24 +401,51 @@ color: rgb(255, 255, 255);</string>
        <string>Chapter-9</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="btnchp10">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>510</y>
+        <width>441</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>28</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 170, 127);background-color:white;border-radius:25;</string>
+      </property>
+      <property name="text">
+       <string>Chapter-10</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="Questions">
      <widget class="QLabel" name="lblhome_2">
       <property name="geometry">
        <rect>
-        <x>370</x>
-        <y>0</y>
-        <width>381</width>
-        <height>71</height>
+        <x>340</x>
+        <y>80</y>
+        <width>241</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <pointsize>36</pointsize>
+        <pointsize>28</pointsize>
        </font>
       </property>
       <property name="text">
-       <string>Chapter(   )</string>
+       <string>Chapter(    )</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -428,9 +455,9 @@ color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>16</x>
-        <y>92</y>
+        <y>132</y>
         <width>771</width>
-        <height>471</height>
+        <height>431</height>
        </rect>
       </property>
       <property name="font">
@@ -639,7 +666,7 @@ color: rgb(0, 170, 127);</string>
        <rect>
         <x>20</x>
         <y>0</y>
-        <width>331</width>
+        <width>761</width>
         <height>71</height>
        </rect>
       </property>
@@ -652,25 +679,28 @@ color: rgb(0, 170, 127);</string>
        <string/>
       </property>
       <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QLabel" name="lblchpno">
       <property name="geometry">
        <rect>
-        <x>560</x>
-        <y>20</y>
-        <width>31</width>
+        <x>480</x>
+        <y>90</y>
+        <width>41</width>
         <height>41</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <pointsize>36</pointsize>
+        <pointsize>28</pointsize>
        </font>
       </property>
       <property name="text">
        <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </widget>
@@ -759,7 +789,7 @@ color: rgb(0, 170, 127);
 border-radius: 50px;</string>
       </property>
       <property name="text">
-       <string>Go to Homie</string>
+       <string>Go to home</string>
       </property>
      </widget>
     </widget>
@@ -903,28 +933,6 @@ border-radius: 45px;</string>
      </widget>
     </widget>
     <widget class="QWidget" name="Newquestion">
-     <widget class="QPlainTextEdit" name="txtreason">
-      <property name="geometry">
-       <rect>
-        <x>850</x>
-        <y>300</y>
-        <width>371</width>
-        <height>161</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>20</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 170, 127);</string>
-      </property>
-      <property name="placeholderText">
-       <string>Reason...</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
@@ -1115,7 +1123,7 @@ color: rgb(0, 170, 127);</string>
       </property>
       <item>
        <property name="text">
-        <string>Programming in c++</string>
+        <string>Basic Data Processing</string>
        </property>
       </item>
       <item>
@@ -1170,7 +1178,7 @@ color: rgb(0, 170, 127);</string>
       <property name="geometry">
        <rect>
         <x>550</x>
-        <y>520</y>
+        <y>500</y>
         <width>241</width>
         <height>61</height>
        </rect>
@@ -1191,6 +1199,28 @@ border-radius: 30px;</string>
       </property>
       <property name="text">
        <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txtreason">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>300</y>
+        <width>411</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="placeholderText">
+       <string>Reason...</string>
       </property>
      </widget>
     </widget>
@@ -1239,7 +1269,7 @@ color: rgb(255, 255, 255);
 border-radius: 30px;</string>
     </property>
     <property name="text">
-     <string>Go to Homie</string>
+     <string>Go to Home</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnadmin">
@@ -1297,9 +1327,9 @@ border-radius: 30px;</string>
    <widget class="QLabel" name="lblcurrent">
     <property name="geometry">
      <rect>
-      <x>880</x>
+      <x>850</x>
       <y>30</y>
-      <width>21</width>
+      <width>51</width>
       <height>41</height>
      </rect>
     </property>

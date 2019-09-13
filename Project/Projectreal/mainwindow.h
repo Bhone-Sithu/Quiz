@@ -77,6 +77,10 @@ private slots:
 
     void on_btnchp9_clicked();
 
+    void on_btnsub2_clicked();
+
+    void on_btnchp10_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
